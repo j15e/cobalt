@@ -87,127 +87,143 @@
     color: #80FCFF;
   }
 
-  .string.quoted .source {
-    color: #9EFF80;
+  .string {
+    &.quoted .source {
+      color: #9EFF80;
+    }
+
+    .constant {
+      color: #80FF82;
+    }
+
+    &.regexp {
+      color: #80FFC2;
+    }
+
+    .variable {
+      color: #EDEF7D;
+    }
   }
 
-  .string .constant {
-    color: #80FF82;
+  .support {
+    &.function {
+      color: #FFB054;
+    }
+
+    &.constant {
+      color: #EB939A;
+    }
+
+    &.type.exception {
+      color: #FF1E00;
+    }
+
+    &.type.property-name.css {
+      color: #9DF39F;
+    }
   }
 
-  .string.regexp {
-    color: #80FFC2;
+  .meta {
+    &.preprocessor.c {
+      color: #8996A8;
+    }
+
+    &.preprocessor.c .keyword {
+      color: #AFC4DB;
+    }
+
+    &.sgml.html &.doctype,
+    &.sgml.html &.doctype .entity,
+    &.sgml.html &.doctype .string,
+    &.xml-processing,
+    &.xml-processing .entity,
+    &.xml-processing .string {
+      color: #73817D;
+    }
+
+    &.tag, &.tag .entity {
+      color: #9EFFFF;
+    }
+
+    &.selector.css .entity.name.tag {
+      color: #9EFFFF;
+    }
+
+    &.selector.css .entity.other.attribute-name.id {
+      color: #FFB454;
+    }
+
+    &.selector.css .entity.other.attribute-name.class {
+      color: #5FE461;
+    }
+
+    &.property-group .support.constant.property-value.css,
+    &.property-value .support.constant.property-value.css {
+      color: #F6F080;
+    }
+
+    &.preprocessor.at-rule .keyword.control.at-rule {
+      color: #F6AA11;
+    }
+
+    &.property-value .support.constant.named-color.css,
+    &.property-value .constant {
+      color: #EDF080;
+    }
+
+    &.constructor.argument.css {
+      color: #EB939A;
+    }
+
+    &.diff,
+    &.diff.header {
+      color: #F8F8F8;
+      background-color: #000E1A;
+    }
   }
 
-  .string .variable {
-    color: #EDEF7D;
-  }
+  .markup {
+    &.deleted {
+      color: #F8F8F8;
+      background-color: #4C0900;
+    }
 
-  .support.function {
-    color: #FFB054;
-  }
+    &.changed {
+      color: #F8F8F8;
+      background-color: #806F00;
+    }
 
-  .support.constant {
-    color: #EB939A;
-  }
+    &.inserted {
+      color: #F8F8F8;
+      background-color: #154F00;
+    }
 
-  .support.type.exception {
-    color: #FF1E00;
-  }
+    &.raw {
+      background-color: rgba(143, 221, 246, 0.19);
+    }
 
-  .meta.preprocessor.c {
-    color: #8996A8;
-  }
+    &.quote {
+      background-color: #004480;
+    }
 
-  .meta.preprocessor.c .keyword {
-    color: #AFC4DB;
-  }
+    &.list {
+      background-color: #130D26;
+    }
 
-  .meta.sgml.html .meta.doctype, .meta.sgml.html .meta.doctype .entity, .meta.sgml.html .meta.doctype .string, .meta.xml-processing, .meta.xml-processing .entity, .meta.xml-processing .string {
-    color: #73817D;
-  }
+    &.bold {
+      font-weight: bold;
+      color: #C1AFFF;
+    }
 
-  .meta.tag, .meta.tag .entity {
-    color: #9EFFFF;
-  }
+    &.italic {
+      font-style: italic;
+      color: #B8FFD9;
+    }
 
-  .meta.selector.css .entity.name.tag {
-    color: #9EFFFF;
-  }
-
-  .meta.selector.css .entity.other.attribute-name.id {
-    color: #FFB454;
-  }
-
-  .meta.selector.css .entity.other.attribute-name.class {
-    color: #5FE461;
-  }
-
-  .support.type.property-name.css {
-    color: #9DF39F;
-  }
-
-  .meta.property-group .support.constant.property-value.css, .meta.property-value .support.constant.property-value.css {
-    color: #F6F080;
-  }
-
-  .meta.preprocessor.at-rule .keyword.control.at-rule {
-    color: #F6AA11;
-  }
-
-  .meta.property-value .support.constant.named-color.css, .meta.property-value .constant {
-    color: #EDF080;
-  }
-
-  .meta.constructor.argument.css {
-    color: #EB939A;
-  }
-
-  .meta.diff, .meta.diff.header {
-    color: #F8F8F8;
-    background-color: #000E1A;
-  }
-
-  .markup.deleted {
-    color: #F8F8F8;
-    background-color: #4C0900;
-  }
-
-  .markup.changed {
-    color: #F8F8F8;
-    background-color: #806F00;
-  }
-
-  .markup.inserted {
-    color: #F8F8F8;
-    background-color: #154F00;
-  }
-
-  .markup.raw {
-    background-color: rgba(143, 221, 246, 0.19);
-  }
-
-  .markup.quote {
-    background-color: #004480;
-  }
-
-  .markup.list {
-    background-color: #130D26;
-  }
-
-  .markup.bold {
-    font-weight: bold;
-    color: #C1AFFF;
-  }
-
-  .markup.italic {
-    font-style: italic;
-    color: #B8FFD9;
-  }
-
-  .markup.heading {
-    font-weight: bold;
-    color: #C8E4FD;
-    background-color: #001221;
+    &.heading {
+      font-weight: bold;
+      color: #C8E4FD;
+      background-color: #001221;
+    }
   }
 }
