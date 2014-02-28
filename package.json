@@ -1,7 +1,7 @@
 {
   "name": "cobalt",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Created by Jacob Rus. Based on ‘Slate’ by Wilson Miner",
   "repository": "https://github.com/j15e/cobalt",
