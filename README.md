@@ -1,6 +1,6 @@
 # Cobalt theme
 
-Originally converted from the [TextMate](textmate-version)
+Originally converted from the [TextMate][textmate-version]
 theme using the [TextMate bundle converter](http://atom.io/docs/latest/converting-a-text-mate-theme).
 
 Preview below with beautiful [Inconsolata][inconsolata] monospace font :
