@@ -7,6 +7,6 @@
   "repository": "https://github.com/j15e/cobalt",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.x.0, <2.0.0"
   }
 }
